@@ -28,8 +28,8 @@ def enviar_email(destinatario):
     try:
         smtp_server = 'smtp.gmail.com'
         port = 587
-        sender_email = 'diogo.soaresdas9@gmail.com'
-        password = 'zfar lccm sivh vysr'
+        sender_email = '@gmail.com'
+        password = 'senha_app'
         assunto = "Teste"
         mensagem = "Olá,\n\nEsta é uma mensagem de teste."
 
@@ -52,9 +52,9 @@ def enviar_email(destinatario):
         print(f"Erro ao enviar e-mail para {destinatario}: {e}")
 
 if __name__ == "__main__":
-    caminho_arquivo = "Y:\Diogo\CONTROLE DE CERTIFICADOS - CERT REDE.xlsx"
-    data_inicio = input("Digite a data de início (formato DD-MM-AAAA): ")
-    data_fim = input("Digite a data de fim (formato DD-MM-AAAA): ")
+    caminho_arquivo = "caminho do arquivo .xlsx"
+    data_inicio = input("Digite a data de início (formato MM-AAAA): ")
+    data_fim = input("Digite a data de fim (formato MM-AAAA): ")
 
     linhas_filtradas = filtrar_planilha(caminho_arquivo, data_inicio, data_fim)
 
